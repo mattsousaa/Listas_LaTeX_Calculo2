@@ -1,0 +1,434 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+\usepackage{tasks}
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II e III}
+
+\cfoot{}
+
+\begin{document}
+
+	\begin{center}
+		\Large Lista 8 - Cálculo II
+	\end{center}
+	
+	Determine as derivadas parciais	
+	
+	\begin{enumerate}
+
+	
+	\begin{enumerate}
+		\item $f(x,y) = 5x^4y^2 + xy^3 + 4$
+		\item $\displaystyle\frac{x^3 + y^2}{x^2 + y^2}$
+		\item $z = x^2 \ln (1 + x^2 + y^2)$
+		\item $f(x,y) = (4xy - 3y^3)^3 + 5x^2y$
+		\item $g(x,y) = x^y$
+		\item $f(x,y) = \sqrt[3]{x^3 + y^2 + 3}$
+		\item $\cos xy$
+		\item $f(x,y) = e^{-x^2 - y^2}$
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		\item $z = xye^{xy}$
+		\item $z = \arctan x/y$
+		\item $(x^2 + y^2) \ln(x^2 + y^2)$
+		\item $z = \displaystyle\frac{x\sin y}{\cos (x^2 + y^2)}$
+		
+	\end{enumerate}
+	
+	\item Considere a função $z = \displaystyle\frac{xy^2}{x^2 + y^2}$. Verifique que $x\dfrac{\partial z}{\partial x} + y \dfrac{\partial z}{\partial y}$
+	
+	 Seja $\phi : \mathbb{R} \to \mathbb{R}$ uma função de uma variável real, diferenciável e tal que $\phi '(1) = 4$. 
+	
+	Seja $g(x,y) = \phi \left(\displaystyle\frac{x}{y}\right)$. Calcule
+	
+	\begin{enumerate}
+		\item $\dfrac{\partial g}{\partial x}(1,1)$
+		\item $\dfrac{\partial g}{\partial y}(1,1)$
+	\end{enumerate}
+	
+	\item Seja $g(x,y) = \phi \left(\displaystyle\frac{x}{y}\right)$. Verifique que:
+	
+	$$x\dfrac{\partial g}{\partial x}(x,y) + y\dfrac{\partial g}{\partial y}(x,y) = 0$$	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\item A função $p = p(V,T)$ é dada implicitamente pela equação $pV = nRT$, onde $n$ e $R$ são constantes não-nulas. Calcule $\dfrac{\partial p}{\partial V}$ e $\dfrac{\partial p}{\partial T}$. 
+	
+	\item Seja $z = e^y \phi (x-y)$, onde $\phi$ é uma função diferenciável de uma variável real. Mostre que
+	$$\dfrac{\partial z}{\partial x} + \dfrac{\partial z}{\partial y} = z$$
+	
+	\item Seja $\phi : \mathbb{R} \to \mathbb{R}$ uma função diferenciável de uma variável real e seja $f(x,y) = (x^2 + y^2)\phi \left(\displaystyle\frac{x}{y}\right)$. Mostre que
+	%$$x\dfrac{\partial f}{\partial x} + y \dfrac{\partial f}{\partial y} = 2f$$	
+	
+	\item Sejam $z = e^{x^2 + y^2}$, $x = \rho \cos \theta$ e $y = \rho \sin \theta$. Verifique que 
+	$$\dfrac{\partial z}{\partial p} = e^{x^2 + y^2} (2x \cos \theta + 2y \sin \theta)$$
+	Conclua que
+	$$\dfrac{\partial z}{\partial p} = \dfrac{\partial z}{\partial x}\cos \theta + \dfrac{\partial z}{\partial y}\sin \theta $$	
+	 
+	\item Suponha que a função $z = z(x,y)$ admita derivadas parciais em todos os pontos de seu domínio e que seja dada implicitamente pela equação $xyz + z^3 = x$. Expresse $\dfrac{\partial z}{\partial x}$ e $\dfrac{\partial z}{\partial y}$ em termos de $x,y,z$. 
+	
+	\item Seja $f(x,y) = \integral_0^{x^2 + y^2} e^{-t^2} \, dt$. Calcule $\dfrac{\partial f}{\partial x}(x,y)$ e $\dfrac{\partial f}{\partial y}(x,y)$.
+	
+	\item Seja $f(x,y) = \integral_{x^2}^{  y^2} e^{-t^2} \, dt$. Calcule $\dfrac{\partial f}{\partial x}(x,y)$ e $\dfrac{\partial f}{\partial y}(x,y)$.
+	
+	\item Considere a função $z = f(x,y)$ e seja $(x_0, y_0) \in Df$. Como você definiria plano tangente ao gráfico de $f$ no ponto $(x_0, y_0)$? Admitindo que $f$ admita derivadas parciais em $(x_0, y_0)$, escreva a equação de um plano que você acha que seja um "forte" candidato a plano tangente ao gráfico de $f$ no ponto $(x_0, y_0, f(x_0,y_0))$.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\item Seja $f(x,y) = x^3y^2 - 6xy + \phi (y)$. Determine uma função $\phi$ de modo que
+	$$\dfrac{\partial f}{\partial y} = 2x^3y - 6x + \displaystyle\frac{y}{y^2 + 1}$$.
+	
+	\item Seja	
+	
+	$$f(x,y) = 
+		\begin{cases}
+			e^{\displaystyle\frac{1}{x^2 + y^2 - 1}}\, \textrm{se }x^2 + y^2 < 1 \\
+			0\,\, \quad \quad \quad \quad \quad \textrm{se }x^2 + y^2 \geq 1 \\
+		\end{cases}
+	%$$
+	\begin{enumerate}
+		\item Esboce o gráfico da função.
+		\item Determine $\dfrac{\partial f}{\partial x}$ e $\dfrac{\partial f}{\partial y}$.
+	\end{enumerate}
+	
+	Seja $f : \mathbb{R} \to \mathbb{R}$ contínua com $f(3) = 4$. Seja 
+	$$g(x,y,z) = \integral_0^{x + y^2 + z^4} f(t) \, dt$$.
+	
+	\begin{enumerate}
+		\item $\dfrac{\partial g}{\partial x}(1,1,1)$
+		\item $\dfrac{\partial g}{\partial y}(1,1,1)$
+		\item $\dfrac{\partial g}{\partial z}(1,1,1)$
+	\end{enumerate}
+	
+	\item O plano x = 1 apresenta intersecção com o paraboloide $z = x^2 + y^2$ em uma parábola. Encontre o coeficiente angular da tangente à parábola em $(1,2,5)$.
+	
+	\item Se resistores elétricos de $R1$, $R2$ e $R3$ ohms são conectados em paralelo para formar um resistor de $R$ ohms, o valor de $R$ pode ser encontrado a partir da equação
+	$$\frac{1}{R} = \displaystyle\frac{1}{R1} + \displaystyle\frac{1}{R2} + \displaystyle\frac{1}{R3}$$
+	Encontre o valor de $\dfrac{\partial R}{\partial R2}$ quando $R_1 = 30$, $R_2 = 45$ e $R_3 = 90$ ohms.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+	 Se $f(x,y) = x \cos y + ye^x$, encontre as derivadas de segunda ordem a seguir:
+	
+	\begin{enumerate}
+		\item $\dfrac{\partial^2 f}{\partial x^2}$
+		\item $\dfrac{\partial^2 f}{\partial y^2}$
+		\item $\dfrac{\partial }{\partial y}\left(\dfrac{\partial f}{\partial x}\right)$
+		
+		\item $\dfrac{\partial }{\partial x}\left(\dfrac{\partial f}{\partial y}\right)$
+	\end{enumerate}	 
+	
+		\item Seja a função $w = xy + \displaystyle\frac{e^y}{y^2 + 1}$. Encontre $\dfrac{\partial }{\partial x}\left(\dfrac{\partial w}{\partial y}\right)$.
+	
+		 Seja a função $f(x,y,z) = 1 - 2xy^2z + x^2y$. Encontre as derivadas parciais a seguir:
+		
+		\begin{enumerate}
+			\item $f_y$
+			\item $f_{yx}$
+			\item $f_{yxy}$
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			\item $f_{yxyz}$
+			
+		\end{enumerate}
+		
+		
+		 Encontre $\dfrac{\partial f}{\partial x}$ e $\dfrac{\partial f}{\partial y}$ nos itens a seguir.
+		
+		\begin{enumerate}
+			\item $f(x,y) = 2x^2 - 3y - 4$.
+			\item $f(x,y) = x^2 - xy + y^2$.
+			\item $f(x,y) = (x^2 - 1)(y + 2)$.
+			\item $f(x,y) = 5xy - 7x^2 - y^2 + 3x - 6y + 2$.
+			\item $f(x,y) = (xy - 1)^2$.
+			\item $f(x,y) = (x^3 + (y/2))^{2/3}$.
+			\item $f(x,y) = \frac{1}{x + y} $.
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			\item $f(x,y) = \frac{x}{x^2 + y^2} $.
+			\item $f(x,y) = \frac{x+y}{xy - 1} $.
+		\item $f(x,y) = e^{x + y + 1}$.
+			\item $f(x,y) = e^{-x} \sin (x+y) $.
+		\item $f(x,y) = \ln (x + y)$.
+			\item $f(x,y) = \arctan \frac{y}{x}$.
+			\item $f(x,y) = e^{xy} \ln (x + y)$.
+			\item $f(x,y) = \sin^2 (x - 3y)$.
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			\item $f(x,y) = \cos^2 (3x - y^2)$.
+			\item $f(x,y) = \log_y x$.
+			\item $f(x,y) = x + y + xy$.
+			\item $f(x,y) = \sin (xy + 1/x)$.
+			\item $f(x,y) = \cos y + y\sin x$.
+			\item $f(x,y) = x^2 \tan (xy)$.
+			\item $f(x,y) = x\sin (x^2y)$.
+			\item $f(x,y) = \ln (2x + 3y)$.
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		\end{enumerate}
+		
+		 A equação de Laplace
+		tridimensional 
+		$$\dfrac{\partial^2 f}{\partial x^2} +\dfrac{\partial^2 f}{\partial y^2} + \dfrac{\partial^2 f}{\partial z^2} = 0$$
+		é satisfeita pelas distribuições de temperatura no estado estacionário $T = f(x,y,z)$ no espaço, 				pelos potenciais gravitacionais e pelos potenciais eletrostáticos. A equação de Laplace 						bidimensional
+		$$\dfrac{\partial^2 f}{\partial x^2} +\dfrac{\partial^2 f}{\partial y^2} = 0$$
+		obtida eliminando-se o termo $\dfrac{\partial^2 f}{\partial z^2}$ da equação anterior, descreve
+	    potenciais e distribuições de temperatura no estado estacionário no
+		plano.
+		
+		Mostre que cada função a seguir satisfaz uma equação de Laplace.
+		
+		\begin{enumerate}
+			\item $f(x,y,z) = x^2 + y^2 - 2z^2$
+		\item $f(x,y,z) = 2z^3 - 3(x^2 + y^2)z$
+			\item $f(x,y) = e^{-2y}\cos 2x$
+			\item $f(x,y) = \ln \sqrt{x^2 + y^2}$
+		\item $f(x,y) = 3x + 2y - 4$
+			\item $f(x,y) = \arctan \displaystyle\frac{x}{y} $
+			\item $f(x,y,z) = (x^2 + y^2 + z^2)^{-1/2}$
+			\item $f(x,y,z) = e^{3x + 4y} \cos 5z$
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		\end{enumerate}
+		
+		 Se ficarmos em uma praia e tirarmos uma fotografia das ondas, essa foto mostrará um padrão regular de picos
+e depressões em dado instante. Veremos movimento vertical periódico no espaço em relação à distância. Se ficarmos na água, poderemos sentir a subida e descida da água com o passar das ondas. Veremos movimento periódico vertical no tempo. Na física, essa
+bela simetria é expressa pela equação de onda unidimensional
+	$$\dfrac{\partial^2 w}{\partial t^2} = c^2\dfrac{\partial^2 w}{\partial x^2} $$
+	em que $w$ é a altura da onda, $x$ é a distância, $t$ é o tempo e $c$ é a velocidade com a qual as ondas se propagam. Em nosso exemplo, x é a distância ao longo da superfície do mar,mas em outras aplicações x pode ser a distância ao longo de uma corda vibrando, a distância no ar (ondas sonoras) ou a distância no
+espaço (ondas luminosas). O número c varia de acordo com o meio e o tipo de onda.
+Mostre que as funções abaixo são todas soluções da equação de onda.
+
+	\begin{enumerate}
+		\item $w = \sin (x + ct)$
+		\item $w = \cos (2x + 2ct)$
+		\item $w = \sin (x + ct) + \cos (2x + 2ct)$
+		\item $w = \ln (2x + 2ct)$
+		\item $w = \tan (2x - 2ct)$
+		\item $w = 5\cos(3x + 3ct) + e^{x + ct}$
+	\end{enumerate}
+	
+	\textbf{DESAFIO}
+	
+	\item Na física o estudo de oscilações é muito importante e está muito presente dentro do nosso dia a dia. Um dos problemas mais clássicos que temos é a descrição vibratória de fenômenos oscilatórios, como a vibração de uma das cordas de um violão, por exemplo. Imagine uma corda presa em suas extremidades. Essa corda quando está relaxada possui comprimento L. Alguém a vibra de forma que seu movimento é de forma vibratória e estacionária. Mostre que com as informações abaixo você pode demonstrar a natureza matemática de uma corda em vibração. No final de tudo, esclareça suas conclusões e demonstre o significado das contas. Cálculo com número não é significado. Interprete. 
+	
+	Uma corda vibra de acordo com uma função $u = u(x,t)$, onde $t$ é o tempo e $x$ é a posição que a onda se encontra do eixo x. Imagine uma corda vibrando ao longo de um plano cartesiano $xy$, onde o eixo y é equivalente a $u$ e o eixo x é equivalente ao tempo. Temos condições de fronteira que modelam o nosso problema, e podem ser definidas como:
+	$$u(x,y) = 
+		\begin{cases}
+			u_{tt} = c^2u_{xx} \\
+			u(0,t) = 0 \\
+			u(L,t) = 0 \\
+			u(x,0) = f(x) \\
+			u_t(x,0) = g(x)
+		\end{cases}
+	$$
+	
+	$u_{tt} = c^2u_{xx}$ é a equação que descreve movimentos oscilatórios em geral. O método de resolução é por separação de variáveis. Imagine que $u(x,t)$ pode ser decomposta em outras duas funções:
+	$$u(x,t) = \phi (t) \psi (t) $$
+	A ideia é fazer por partes. Na equação acima você pode usar:
+	$$u_{tt} = \phi (x) \psi ''(t) $$
+	$$u_{xx} = \psi (t) \phi ''(x) $$
+	
+	Utilize cada condição de fronteira nas 2 equações acima. Mostre que através disso, podemos descrever $u(x,t)$ como:
+	
+$$u(x,t) = \displaystyle\frac{8a}{\pi ^2} \somatorio_{n=1}^{\infty} \displaystyle\frac{(-1)^n}{(2n + 1)^2} \cos \displaystyle\left(\frac{(2n + 1)\pi t}{2}\right) \sin \displaystyle\left(\frac{(2n + 1)\pi x}{2}\right)$$
+	
+	\item O volume $V$ de um cilindro reto é dado pela fórmula $V = \pi r^2 h$, onde $r$ é o raio e h é a altura. Determine uma fórmula para a taxa de variação instantânea de $V$ em relação a $r$ se $r$ variar e $h$ permanecer constante. 
+	
+	 \item Determine uma relação da área lateral de um cone quando temos a altura desse cone variando no tempo. 
+	
+	\end{enumerate}
+	
+
+\end{document}

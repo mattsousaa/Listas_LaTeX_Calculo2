@@ -1,0 +1,188 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{esint}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tasks}
+\usepackage[utf8]{inputenc}
+\usepackage{mathrsfs} % Transformada de Laplace
+\usepackage{indentfirst}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II, III e EDO}
+
+\cfoot{}
+
+\begin{document}
+
+	\begin{center}
+		\Large Lista 7 - Séries e Sequências
+	\end{center}
+
+	\begin{enumerate}
+	
+		\item Calcule, caso exista, $\limite_{n \to +\infty} a_n$, sendo $a_n$ igual a:
+		\begin{enumerate}
+			\item $\displaystyle \frac{n^3 + 3n + 1}{4n^3 + 2}$
+			\item $\sqrt{n + 1} - \sqrt{n}$
+			\item $\somatorio_{k=0}^{n} t^k $, $0 < |t| < 1$
+			\item $\somatorio_{k=0}^{n} \displaystyle \left(\frac{1}{2}\right)^k $
+			\item $\left(1 - \displaystyle \frac{2}{n}\right)^n$ (Lembrete: $\limite_{n \to +\infty} \left(1 + \displaystyle \frac{1}{n}\right)^n = e$.)
+			\item $\integral_1^{n} \displaystyle\frac{1}{x} \, dx$
+			\item $\integral_1^{n} \displaystyle\frac{1}{x^\alpha} \, dx$, onde $\alpha$ é um real dado
+			\item $\integral_0^{n} e^{-sx} \, dx$, $(s > 0)$
+			\item $\integral_0^{n} \displaystyle\frac{1}{1 + x^2} \, dx$
+			\item $\integral_2^{n} \displaystyle\frac{1}{x^2 - x} \, dx$
+			\item $\displaystyle\frac{n + 1}{\sqrt[3]{n^7 + 2n + 1}}$
+			\item $\sin (1/n)$
+			\item $n \sin (1/n)$
+			\item $\displaystyle \frac{1}{n} \sin (n)$
+			\item $\cos (n \pi)$
+			\item $(-1)^n + \displaystyle \frac{(-1)^n}{n}$
+			\item $\integral_0^{n} e^{-sx} \cos x \, dx$, $(s > 0)$
+			\item $n\left[1 - \displaystyle \frac{(n+1)^n}{en^n}\right]$
+		\end{enumerate}
+		
+		\item Calcule $\limite_{n \to +\infty} s_n$, onde $s_n = \somatorio_{k=1}^{n} \displaystyle \left(\frac{1}{k} - \frac{1}{k + 1}\right)$.
+		
+		\item Calcule $\limite_{n \to +\infty} b_n$, sendo $b_n$ igual a:
+		\begin{enumerate}
+			\item $\displaystyle \frac{1 + \displaystyle\frac{1}{2} + \displaystyle\frac{1}{3} + ... + \displaystyle\frac{1}{n}}{n}$
+			\item $\displaystyle \frac{2 + \sqrt{2} + \sqrt[3]{2} + ... + \sqrt[n]{2}}{n}$
+		\end{enumerate}
+		
+		\item Suponha $a_n > 0$, $n \geq 1$, e que $\limite_{n \to +\infty} a_n = a$. Prove que $\limite_{n \to +\infty} \sqrt[n]{a_1 \, a_2 \, a_3 \, ... \, a_n} = a$. 
+		
+		\item Suponha $a_n > 0$, $n \geq 1$. Suponha, ainda, que
+		$$ \limite_{n \to +\infty} \displaystyle \frac{a_{n + 1}}{a_n} = L$$
+		Prove que $\limite_{n \to +\infty} \sqrt[n]{a_n} = L$. 
+		
+		Sugestão: $\sqrt[n]{a_n} = \sqrt[n]{a_1} \sqrt[n]{\frac{a_2}{a_1}\displaystyle\frac{a_3}{a_2} ... \displaystyle\frac{a_n}{a_{n-1}}}$
+		
+		\item Calcule $\limite_{n \to +\infty} \displaystyle \frac{a_{n + 1}}{a_n}$ e $\limite_{n \to +\infty} \sqrt[n]{a_n}$
+		\begin{enumerate}
+			\item $a_n = \displaystyle \frac{n!}{n^n}$
+			\item $a_n = n$
+			
+		\end{enumerate}
+		
+		\item Considere a sequência de termo geral $\somatorio_{k=0}^{n} t^k $, $t \neq 0$ e $t \neq 1$. Verifique que
+		$$s_n = \displaystyle\frac{1 - t^{n+1}}{1 - t}$$
+		
+		\item Suponha $0 < t < 1$. Mostre que
+		$$\limite_{n \to +\infty} \somatorio_{k=1}^{n} t^k = \displaystyle\frac{t}{1 - t}$$
+		
+		\item Suponha uma sequência tal que
+		$$a_1 + a_2 + a_3 + ... + a_n$$
+		Demonstre que a soma $s_n$ dos $n$ primeiros termos é:
+		$$s_n = \displaystyle\frac{(a_1 + a_n)n}{2}$$
+		
+		\item Calcule e interprete geometricamente o resultado obtido.
+		\begin{enumerate}
+			\item $\limite_{n \to +\infty} \displaystyle\iint_{A_n} \displaystyle\frac{1}{\sqrt{x^2 + y^2}} \,dx\,dy$, onde $A_n$ é a coroa circular $\displaystyle\frac{1}{n^2} \leq x^2 + y^2 \leq 1 $, com $n \geq 2$.
+			\item $\limite_{n \to +\infty} \displaystyle\iint_{A_n} \displaystyle\frac{1}{(x^2 + y^2)^2} \,dx\,dy$, onde $A_n$ é a coroa circular $1 \leq x^2 + y^2 \leq n^2 $, com $n \geq 2$.
+			\item $\limite_{n \to +\infty} \displaystyle\iiint_{A_n} \displaystyle\frac{1}{(x^2 + y^2)^\alpha} \,dx\,dy$, onde $A_n$ é a coroa circular $1 \leq x^2 + y^2 \leq n^2 $, $n \geq 2$, e $\alpha > 0$ é um real dado.
+			\item $\limite_{n \to +\infty} \displaystyle\iint_{A_n} \displaystyle\left[\frac{1}{\sqrt{x}} + \frac{1}{\sqrt{y}}\right]\,dx\,dy$, onde $A_n$ é o retângulo $\displaystyle\frac{1}{n} \leq x \leq 1$, e $\displaystyle\frac{1}{n} \leq y \leq 1$, com $n \geq 2$.
+			\item $\limite_{n \to +\infty} \displaystyle\iint_{A_n} e^{-\sqrt{x^2 + y^2}} \,dx\,dy$, onde $A_n$ é o círculo $x^2 + y^2 \leq n^2$, $n \geq 1$.
+		\end{enumerate}
+		
+		\item Verifique que a sequência $a_n = \integral_1^{n} \displaystyle\frac{\sin x}{x} \, dx$ é convergente.
+		
+		\item Seja $\alpha > 1$ um real dado. Mostre que a sequência $a_n = \integral_1^{n} \sin x^{\alpha} \, dx$ é convergente.
+		
+		\item Seja $\alpha = 1/2$. A sequência $a_n = \integral_1^{n} \sin x^{\alpha} \, dx$ é convergente ou divergente? Justifique.
+		
+		\item Calcule
+		\begin{enumerate}
+			\item $\limite_{n \to +\infty} n\left[1 - \cos \displaystyle \frac{1}{n}\right]$
+			\item $\limite_{n \to +\infty} n\left[\sin \left(\displaystyle \frac{1 + n^3}{n^2}\right) - \sin n\right]$
+			\item $\limite_{n \to +\infty} \displaystyle \frac{n + n^2 \sin \frac{1}{n}}{1 - n^2 \sin \frac{1}{n}}$
+			\item $\limite_{n \to +\infty} n\left[\sin \left(x_0 + \frac{1}{n}\right) - \sin x_0\right]$, $x_0$ fixo.
+			\item $\limite_{n \to +\infty} n\left[e^{\sin \frac{1}{n} - 1}\right]$
+			
+		\end{enumerate}
+		
+		\item A sequência $s_n = \somatorio_{k=1}^{n} \displaystyle \frac{1}{k^2}$ é convergente ou divergente? Justifique.	
+		
+		\item A sequência $s_n = \somatorio_{k=1}^{n} \displaystyle \frac{1}{k}$ é convergente ou divergente? Justifique.	
+		
+		\item É convergente ou divergente? Justifique.
+		\begin{enumerate}
+			\item $s_n = \somatorio_{k=1}^{n} \displaystyle \frac{1}{k^3}$
+			\item $s_n = \somatorio_{k=1}^{n} \displaystyle \frac{1}{\sqrt{k}}$	
+			\item $s_n = \somatorio_{k=0}^{n} \displaystyle \frac{1}{2^k}$	
+			\item $s_n = \somatorio_{k=1}^{n} \displaystyle \frac{1}{k!}$
+			\item $s_n = \somatorio_{k=1}^{n} \displaystyle \frac{1}{k^2 + 1}$
+			\item $s_n = \somatorio_{k=1}^{n} e^{-k}$
+			\item $s_n = \somatorio_{k=2}^{n} \displaystyle \frac{1}{k \ln k}$				
+		\end{enumerate}
+		
+		\item Para cada natural $n \geq 1$, seja $A_n$ o círculo $x^2 + y^2 \leq n^2$. Prove que é convergente a sequência de termo geral
+		$$a_n = \displaystyle\iint_{A_n} e^{-(x^2 + y^2)^2} \,dx\,dy$$
+		
+		\item Para cada natural $n \geq 1$, seja $A_n$ o círculo $x^2 + y^2 \leq n^2$. A sequência de termo geral
+		$$a_n = \displaystyle\iint_{A_n} \displaystyle\frac{e^{-x^2 y^2}}{1 + (x^2 + y^2)^2}\,dx\,dy$$
+		
+		é convergente ou divergente? Justifique.
+		
+		\item Prove que a sequência de termo geral
+		$$a_n = \integral_1^{n} \displaystyle\frac{\sin^2 x}{x^2} \, dx$$
+		é convergente.
+		
+		\item A sequência do termo geral 
+		$$a_n = \integral_1^{n} \sin \displaystyle\frac{1}{x^2} \, dx$$
+		
+		é convergente ou divergente? Justifique.
+		
+		\item Suponha que, para todo natural $n$, $a_n$ pertence ao conjunto $\{0,1,2, ..., 9\}$. A sequência de termo geral 
+		$$s_n = \somatorio_{k=1}^{n} \displaystyle \frac{a_k}{10^k}$$
+		
+		é convergente ou divergente? Justifique.
+		
+		\item Seja $s_n = \somatorio_{k=0}^{n} [1 + (-1)^k]$, $n \geq 0$. Prove que $\limite_{n \to +\infty} s_n = +\infty$.
+		
+	\end{enumerate}
+	
+%$\integral_0^{\infty} \left(\frac{x}{x^2 + 1} - \frac{C}{3x + 1}\right) \, dx$
+\end{document}

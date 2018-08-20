@@ -1,0 +1,393 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+\usepackage{tasks}
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II e III}
+
+\cfoot{}
+
+\begin{document}
+
+	\begin{center}
+		\Large Lista 7 - Cálculo II
+	\end{center}
+	
+Desenhe as curvas de nível e determine a imagem:	
+	
+	\begin{enumerate}
+		
+		
+		
+Desenhe as curvas de nível e determine a imagem:
+			\begin{enumerate}
+			\item $f(x,y) = x - 2y$
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				\item $f(x,y) = \displaystyle\frac{x - y}{x + y}$
+				\item $\displaystyle\frac{x^2}{x^2 + y^2}$
+				\item $3x^3 - 4xy + y^2$
+				\item $f(x,y) = x^2 - y^2$
+				\item $z = \displaystyle\frac{y}{x - 2} $
+				\item $z = \displaystyle\frac{x}{y - 1} $
+				\item $z = \displaystyle\frac{xy}{x^2 + y^2} $
+			\end{enumerate}
+			
+			\item Desenhe as curvas de nível e esboce o gráfico a função
+			$$f(x,y) = \sqrt{(x+1)^2 + y^2} + \sqrt{(x-1)^2 + y^2}$$			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		\item Suponha que $T(x,y) = 4x^2 + 9y^2$ represente uma distribuição de temperatura no plano $xy$.
+			\begin{enumerate}
+				\item Desenhe a isoterma correspondente à temperatura de 36ºC.
+				\item Determine o ponto de mais baixa temperatura da reta $x + y = 1$.
+			\end{enumerate}	
+		\item Duas curvas de nível podem interceptar-se? Justifique.
+		\item Suponha que $T(x,y) = 2x + y$ (ºC) represente uma distribuição de temperatura no plano $xy$.	
+			\begin{enumerate}
+				\item Desenhe as isotermas correspondente às temperaturas: 0ºC, 3ºC e -1ºC.
+				\item Raciocinando geometricamente, determine os pontos de mais alta e mais baixa temperatura do círculo $x^2 + y^2 \leq 4 $.
+			\end{enumerate}	
+		\item Uma placa fina de metal, localizada no plano xy, tem temperatura $T(x,y)$ no ponto $(x,y)$. As curvas de nível de $T$ são chamadas isotérmicas porque todos os pontos em uma dessas curvas têm a mesma temperatura. Faça o esboço de algumas isotérmicas se a função temperatura for dada por:
+		$$T(x,y) = \displaystyle\frac{100}{1 + x^2 + 2y^2} $$	
+		\item Se $V(x,y)$ é o potencial elétrico em um ponto $(x,y)$ no plano $xy$, então as curvas de nível de $V$ são chamadas curvas equipotenciais, porque em todos os pontos dessa curva o potencial elétrico é o mesmo. Esboce algumas curvas equipotenciais de $V(x,y) = c / (r^2 - x^2 - y^2)$, onde $c$ é uma constante positiva.
+		
+		 Seja a função
+		$$f(x,y) = - \displaystyle\frac{xy}{x^2 + y^2} $$
+		Determine esse limite ao longo
+	\begin{enumerate}
+		\item do eixo x.
+		\item do eixo y.
+		\item da reta $y = x$.
+		
+		
+		
+		
+		
+		
+		\item da reta $y = -x$.
+		\item da parábola $y = x^2$.
+	\end{enumerate}
+	
+	\item Prove que o limite a seguir não existe.
+	$$\limite_{(x,y) \to (0,0)} - \displaystyle\frac{xy}{x^2 + y^2}$$
+	
+	\item Prove por definição que:
+	$$\limite_{(x,y) \to (a_1, a_2)} k = k$$
+		
+	\item Prove por definição que:
+	$$\limite_{(x,y) \to (a_1, a_2)} x = a_1$$
+	
+	\item Prove por definição que:
+	$$\limite_{(x,y) \to (0,0)} - \displaystyle\frac{2x^2y}{x^2 + y^2} = 0$$
+	
+	\item Prove por definição que:
+	$$\limite_{(x,y) \to (0,0)} - \displaystyle\frac{x^2y^2}{x^2 + y^2} = 0$$
+	\item Verifique se o limite abaixo existe utilizando coordenadas polares.
+	$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^2 + y^2}{x - y}$$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\item Verifique se o limite abaixo existe utilizando coordenadas polares.
+	$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{\sin (xy)}{x^2 + y^2}$$
+	
+	\item Verifique se o limite abaixo existe utilizando coordenadas polares.
+	$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{xy}{\sqrt{x^2 + y^2}}$$
+	\item Verifique se o limite abaixo existe utilizando coordenadas polares.
+	$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{\sin (x^2 + y^2)}{1 - \cos \sqrt{x^2 + y^2}}$$
+	
+	\item Se $f(x,y) = \displaystyle\frac{xy}{x^2 + y^2}$, será que $\limite_{(x,y) \to (0,0)} f(x,y)$ existe? Justifique.
+	
+	\item Se $f(x,y) = \displaystyle\frac{xy^2}{x^2 + y^4}$, será que $\limite_{(x,y) \to (0,0)} f(x,y)$ existe? Justifique.
+	
+	\item Ache $\limite_{(x,y) \to (0,0)} \displaystyle\frac{3x^2y}{x^2 + y^2}$ se existir. Caso exista prove o limite por definição.
+	
+Determine o limite, se existir, ou mostre que o limite não existe.
+	
+	\begin{enumerate}
+		\item $\limite_{(x,y) \to (1,2)} (5x^3 - x^2y^2)$
+		\item $\limite_{(x,y) \to (2,1)} \displaystyle\frac{4 - xy}{x^2 + 3y^2}$
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		\item $\limite_{(x,y) \to (1,-1)} e^{-xy}\cos (x + y)$
+		\item $\limite_{(x,y) \to (1,0)} \ln \displaystyle\frac{1 + y^2}{x^2 + xy}$
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^2 + \sin^2 y}{2x^2 + y^2}$
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{xy\cos y}{3x^2 + y^2}$
+		\item $\limite_{(x,y) \to (1,0)} \displaystyle\frac{xy - y}{(x - 1)^2 + y^2}$
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^4 - y^4}{x^2 + y^2}$
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^3}{x^2 + y^2}$			
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^2ye^y}{x^4 + 4y^2}$	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^2\sin^2 y}{x^2 + 2y^2}$	
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^2 + y^2}{\sqrt{x^2 + y^2 + 1} - 1}$	
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{xy^4}{x^2 + y^8}$	
+		\item $\limite_{(x,y,z) \to (\pi,\theta, 1)} e^{y^2}\tan (xy)$	
+		\item $\limite_{(x,y,z) \to (0,0,0)} \displaystyle\frac{xy + yz}{x^2 + y^2 + z^2}$	
+		\item $\limite_{(x,y,z) \to (0,0,0)} \displaystyle\frac{yz}{x^2 + 4y^2 + 9z^2}$	
+		\item $\limite_{(x,y) \to (0,0)} x\sin \displaystyle\frac{1}{x^2 + y^2}$	
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x}{\sqrt{x^2 + y^2}}$
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{x^2}{\sqrt{x^2 + y^2}}$	
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{xy}{\sqrt{x^2 + y^2}}$
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{xy(x-y)}{x^4 + y^4}$	
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{3x^2 - y^2 + 5}{x^2 + y^2 + 2}$	
+		\item $\limite_{(x,y) \to (0,4)} \displaystyle\frac{x}{\sqrt{y}}$	
+		\item $\limite_{(x,y) \to (1,1)} \displaystyle\frac{x^2 - 2xy + y^2}{x - y}$
+		\item $\limite_{(x,y) \to (1,1)} \displaystyle\frac{x^2 - y^2}{x - y}$	
+		\item $\limite_{(x,y) \to (4,3)} \displaystyle\frac{\sqrt{x} - \sqrt{y + 1}}{x - y - 1}$
+			
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	\item Calcule $\limite_{(x,y) \to (0,0)} \displaystyle\frac{\sin (x^2 + y^2)}{x^2 + y^2}$
+	
+	\item Calcule
+	$$\limite_{(h,k) \to (0,0)} \displaystyle\frac{f(x + h,\,\, y + k) - f(x,y) - 2xh - k}{||(h,k)||}$$
+	onde $f(x,y) = x^2 + y$.
+
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x + h,\,\, y) - f(x,y)}{h}$$
+	onde $f(x,y) = x^2 + 2y$.
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x,\,\, y + h) - f(x,y)}{h}$$
+	onde $f(x,y) = x^2 + 2y$.
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x + h,\,\, y) - f(x,y)}{h}$$
+	onde $f(x,y) = x^3y^2 + 2xy + 6y$.	
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x,\,\, y + h) - f(x,y)}{h}$$
+	onde $f(x,y) = x^3y^2 + 2xy + 6y$.
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x + h,\,\, y) - f(x,y)}{h}$$
+	onde $f(x,y) = e^{2x^2} + y^2$.
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x,\,\, y + h) - f(x,y)}{h}$$
+	onde $f(x,y) = e^{2x^2} + y^2$.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x + h,\,\, y) - f(x,y)}{h}$$
+	onde $f(x,y) = (2x^3 + y^2)e^{x^2 + y^2}$.
+	
+	\item Calcule
+	$$\limite_{h \to 0} \displaystyle\frac{f(x,\,\, y + h) - f(x,y)}{h}$$
+	onde $f(x,y) = (2x^3 + y^2)e^{x^2 + y^2}$.
+	
+	\item Calcule, caso exista, $\limite_{(h,k) \to (0,0)} \displaystyle\frac{f(h,k)}{||(h,k)||}$, onde $f$ é dada por $\displaystyle\frac{x^3}{x^2 + y^2}$.
+	
+	 Seja $f(x,y) = \displaystyle\frac{2xy^2}{x^2 + y^4}$.
+	\begin{enumerate}
+		\item Considere a reta $\gamma (t) = (ab, bt)$ com $a^2 + b^2 > 0$; mostre que, quaisquer que sejam $a$ e $b$, $$\limite_{t \to 0} f(\gamma (t)) = 0$$
+		Tente visualizar este resultado através das curvas de nível de $f$.
+		
+		\item Calcule $\limite_{t \to 0} f(\gamma (t))$, onde $\gamma (t) = (t^2,t)$.
+		
+		(Antes de calcular o limite, tente prever o resultado olhando para as curvas de nível de $f$.)
+		
+		\item $\limite_{(x,y) \to (0,0)} \displaystyle\frac{2xy^2}{x^2 + y^4}$ existe? Por quê?
+		
+	\end{enumerate}
+	
+		\item Calcule o limite:
+		
+		$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{4 - 4\cos \sqrt{|xy|}}{|xy|}$$
+		
+		\item Verifique se o limite abaixo existe. Se existir, ache o limite por definição.
+		$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{4xy^2}{x^2 + y^2}$$
+		
+		
+	
+	\end{enumerate}
+	
+\end{document}

@@ -1,0 +1,265 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tasks}
+\usepackage[utf8]{inputenc}
+\usepackage{mathrsfs} % Transformada de Laplace
+\usepackage{indentfirst}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II, III e EDO}
+
+\cfoot{}
+
+\begin{document}
+
+	\begin{center}
+		\Large Lista 2 - Integrais Impróprias.
+	\end{center}
+
+\textbf{obs:} Use $e^{i\theta} = cos\theta + i \, sin\theta$ quando achar necessário.
+
+	\begin{enumerate}
+	
+		\item Determine \textit{k} para que se tenha $\integral_{-\infty}^{+\infty} e^{k|t|} \, dt = 1$
+		
+		\item Sejam \textit{$\alpha$} e \textit{s}, \textit{$s > 0$}, reais dados. Verifique que:
+		
+		\begin{enumerate}		
+		\item $\integral_0^{+\infty} e^{-st} \sin (\alpha t)  \, dt = \frac{\alpha}{s^2 + \alpha^2}$
+		\item $\integral_0^{+\infty} e^{-st} \cos (\alpha t)  \, dt = \frac{s}{s^2 + a^2}$
+		\item $\integral_0^{+\infty} e^{-st} e^{at} \, dt = \frac{1}{s - a}$, com $s > a$
+		\item $\integral_0^{+\infty} e^{-st} t \, dt = \frac{1}{s^2}$
+		\item $\integral_0^{+\infty} e^{-st} \, dt = \frac{1}{s}$
+		\item $\integral_0^{+\infty} e^{-st} te^{\alpha t} \, dt = \frac{1}{(s - a)^2}$, com $s > a$
+		\end{enumerate}
+		
+		\item Calcule as Transformadas de Fourier abaixo:	
+		
+		\begin{enumerate}		
+		\item $\integral_0^{+\infty} e^{-at} e^{-i \omega t}  \, dt$
+		\item $\integral_0^{+\infty} e^{-at} \cos (\omega t)  \, dt$
+		\item $\integral_0^{+\infty} e^{-at} \sin (\omega t)  \, dt$
+		\end{enumerate}		
+		
+		\item Calcule as funções abaixo utilizando a definição: $\integral_0^{+\infty} f(t) e^{-st} \, dt$.
+		
+		\begin{enumerate}
+		\item $f(t) = \sin t + 3\cos (2t) $
+		\item $f(t) = 3t + 2e^{3t} + te^t$
+		\item $f(t) = \sin (\omega t + \theta)$, onde $\omega$ e $\theta$ são constantes.
+		\item $f(t) = \cos (\omega t + \theta)$, onde $\omega$ e $\theta$ são constantes.
+		\item $f(t) = \sinh (\omega t)$, onde $\omega$ é uma constante.
+		\item $f(t) = \cosh (\omega t)$, onde $\omega$ é uma constante.
+		\item $f(t) = e^{-at} \sin (\omega t)$, onde $\omega$ é uma constante.
+		\item $f(t) = e^{-at} \cos (\omega t)$, onde $\omega$ é uma constante.
+		\item $f(t) = \cosh (\alpha t)$, onde $\alpha$ é uma constante.
+		\item $f(t) = t^3 e^{\alpha t}$, onde $\alpha$ é uma constante.
+		
+		\end{enumerate}
+		
+		\item Definimos Transformada de Laplace como: 
+		$$\mathscr{L}\{f(t)\} = \integral_0^{+\infty} f(t) e^{-st} \, dt$$ ou também: 
+		$$\mathscr{L}\{f(t)\}=F(s)$$
+		
+		
+		Esse tipo de Transformação é muito utilizado no estudo e resolução de EDO's (Equações Diferenciais
+		Ordinárias) e também na representação de sinais no domínio da frequência. Existe uma operação muito
+		importante denominada Convolução, e pode ser representada por este símbolo: $\ast$ . Denominamos 
+		Convolução de duas funções \textit{f} e \textit{g} como sendo:
+		$$(f \ast g)(t) = \integral_0^t f(\tau)g(t - \tau) \, d\tau$$
+	
+		Denominamos Convolução como um operador linear, e é bastante utilizado em análises funcionais e em 
+		processamento de sinais. Definimos que a Transformada de Laplace da Convolução entre duas funções
+		é igual ao produto das Transformadas entre essas duas funções. Ou seja:
+		$$\mathscr{L}\{f \ast g\} = \mathscr{L}\{f(t)\}\mathscr{L}\{f(g)\} = F(s)G(s)$$
+		
+		Utilizando a transformada de Laplace por definição, e considerando $f(t) = (f \ast g)(t)$, 						demonstre que
+		$$\mathscr{L}\{f \ast g\} = F(s)G(s)$$ 
+		Utilize seus conhecimentos de integrais impróprias e métodos de substituição para fazer essa 					demonstração.
+		
+		
+		\item Definimos Transformada de Fourier como: 
+		$$\mathscr{F}\{f(t)\} = \integral_{-\infty}^{+\infty} f(t) e^{-i\omega t} \, dt$$ ou também: 
+		$$\mathscr{F}\{f(t)\}=F(\omega)$$
+		
+		Esse tipo de Transformação é muito utilizado no estudo e resolução de EDO's (Equações Diferenciais
+		Ordinárias), EDP's (Equaçãos Diferenciais Parciais) e também na representação de sinais no domínio 				da frequência. Existe uma operação muito
+		importante denominada Convolução, e pode ser representada por este símbolo: $\ast$ . Denominamos 
+		Convolução de duas funções \textit{f} e \textit{g} como sendo:
+		$$(f \ast g)(t) = \integral_{-\infty}^{+\infty} f(\tau)g(t - \tau) \, d\tau$$
+		
+		Denominamos Convolução como um operador linear, e é bastante utilizado em análises funcionais e em 
+		processamento de sinais. Definimos que a Transformada de Fourier da Convolução entre duas funções
+		é igual ao produto das Transformadas entre essas duas funções. Ou seja:
+		$$\mathscr{F}\{f \ast g\} = \mathscr{F}\{f(t)\}\mathscr{F}\{f(g)\} = F(\omega)G(\omega)$$
+		
+		Utilizando a transformada de Fourier por definição, e considerando $f(t) = (f \ast g)(t)$, 						demonstre que
+		$$\mathscr{F}\{f \ast g\} = F(\omega)G(\omega)$$ 
+		Utilize seus conhecimentos de integrais impróprias e métodos de substituição para fazer essa 					demonstração.
+		
+		\item Séries de Fourier são formas de representação de funções periódicas em somas de funções 					trigonométricas (Senoides). Por definição, a Série de Fourier de uma função $f(t)$ é representada 				por:
+		$$f(t)= \frac{a_0}{2} + \somatorio_{n=1}^{\infty} a_n \cos(\omega_n t) + b_n \sin(\omega_n t) $$
+		Onde denominamos $a_0$, $a_n$ e $b_n$ como coeficientes da Série de Fourier (SDF). É 
+		importante destacar que $\omega_n$ é denominada de frequência angular da função periódica. 
+		A frequência angular é calculada como:
+		
+		$$\omega_n = \frac{2\pi}{T}n $$
+		
+		Onde $T$ é o período da função periódica e $n$ é um número natural.  
+		
+		Os coeficientes são calculados da seguinte forma:
+		
+		$$a_0 = \frac{2}{T}\integral_0^{T} f(t) \, dt $$ 
+		$$a_n = \frac{2}{T}\integral_0^{T} f(t) \cos(\omega_n t) \, dt $$ 
+		$$b_n = \frac{2}{T}\integral_0^{T} f(t) \sin(\omega_n t) \, dt $$ 
+		
+		Baseado nessas informações, calcule as Séries de Fourier das seguintes funções abaixo:
+		
+		\begin{enumerate}
+		\item Seja uma função periódica $f(t)$ definida por: 
+		$$f(t) = 
+			\begin{cases}
+				\, -1,\, -1 < t < 0 \\
+				\, 1,\, 0 < t < 1 \\
+				\, 0,\,  t = 0\ \textrm{e } t = 1 \\
+			\end{cases}
+		$$
+		
+		\item Seja uma função periódica $f(t)$ definida por: 
+		$$f(t) = 
+			\begin{cases}
+				\, |t|,\, -1 \leq t \leq 1 \\
+				\, f(t+2) = f(t) \\
+			\end{cases}
+		$$
+		
+		\item Seja uma função periódica $f(t)$ definida por: 
+		$$f(t) = 
+			\begin{cases}
+				\, t,\, 0 < t < 1 \\
+				\, \displaystyle\frac{1}{2},\, t = 1 \\
+				\, f(t+1) = f(t) \\
+			\end{cases}
+		$$
+		
+		\item Seja uma função periódica $f(t)$ definida por: 
+		$$f(t) = 
+			\begin{cases}
+				\, t,\, -1 < t < 1 \\
+				\, f(t+2) = f(t) \\
+			\end{cases}
+		$$
+		
+		\item Seja uma função periódica $f(t)$ definida por: 
+		$$f(t) = 
+			\begin{cases}
+				\, 1,\, 0 \leq t < 1 \\
+				\, 0,\, 1 \leq t < 2 \\
+				\, f(t+2) = f(t)
+			\end{cases}
+		$$
+		
+		\item Seja uma função periódica $f(t)$ definida por: $f(t) = |\sin t|$
+		
+		\item Seja uma função periódica $f(x)$ definida por: 
+		$$f(t) = 
+			\begin{cases}
+				\, x^2,\, 0 \leq x < 1 \\
+				\, f(x+1) = f(x)
+			\end{cases}
+		$$
+		
+		
+		\end{enumerate}
+		
+		\item Calcule a integral $\integral_0^{+\infty} x^n e^{-x} \, dx$ para $n = 0,1,2\ \textrm{e } 3$.
+		Quais suas conclusões sobre este cálculo? Explique de forma detalhada.
+		
+		\item A velocidade média das moléculas de um gás ideal é:
+		$$\bar{v} = \frac{4}{\sqrt{\pi}} \left(\frac{M}{2RT}\right)^{3/2} \integral_0^{+\infty} 				v^3e^{\frac{-Mv^2}{(2RT)}} \, dv$$
+		
+		Onde $M$ é o peso molecular do gás; $R$, a constante do gás; $T$, a temperatura do gás; e $v$,
+		a velocidade molecular. Mostre que:
+		
+		$$\bar{v} = \sqrt{\frac{8RT}{\pi M}}$$
+		
+		\item Uma substância radioativa se deteriora de forma exponencial. A massa de qualquer substância
+		radioativa no tempo $t$ é $m(t) = m(0)e^{kt}$, onde $m(0)$ é a massa inicial e $k$ é uma constante
+		negativa. A vida média de uma substância radioativa é considerada como sendo o tempo necessário
+		para que sua massa se reduza a metade. A vida média $M$ de um átomo na substância é: 
+		$$M = -k\integral_0^{+\infty} te^{kt} \, dt$$ 
+		Para o isótopo radioativo de carbono, $^{14}C$, usado na datação de radiocarbono, o valor de $k$
+		é $-0,000121$. Encontre a vida média de um átomo de $^{14}C$.  
+		
+		\textbf{obs:} Use uma calculadora caso ache necessário.
+		
+		\item Os astrônomos usam uma técnica chamada estereografia estelar para determinar a densidade das 				estrelas em um aglomerado estelar a partir da densidade (bidimensional) observada, que pode ser 				analisada a partir de uma fotografia. Suponha que em um aglomeado esférico de raio $R$ a densidade 				das estrelas dependa somente da distância $r$ do centro do aglomerado. Se a densidade aparente for 				dada por $y(s)$, onde $s$ é a distância planar observada do centro do aglomerado e $x(r)$ é a 					densidade real, pode ser mostrado que:
+		$$y(s) = \integral_s^R \frac{2r}{\sqrt{r^2 - s^2}} x(r) \, dr$$
+		
+		Se a densidade real das estrelas em um aglomerado for $x(r) = \frac{1}{2} (R - r)^2$, encontre a 				densidade aparente $y(s)$.
+		
+		\item A intensidade da força de repulsão entre duas cargas pontuais com o mesmo sinal, uma com 					carga 1 e outra com carga $q$, é
+		$$F = \frac{q}{4\pi \epsilon_0r^2}$$
+
+		onde $r$ é a distância entre as cargas e $\epsilon_0$ é uma constante. O potencial $V$ do ponto $P$ 		devido à carga $q$ é definido como o trabalho realizado para trazer uma carga unitária para $P$ ao 				longo da reta que liga $q$ e $P$. Ache uma fórmula para $V$.
+
+		Considere $V = W = \integral_{\infty}^d F \, dr$.
+		
+		\item Encontre o valor da constante C para qual a integral
+		$$\integral_0^{\infty} \left(\frac{1}{\sqrt{x^2 + 4}} - \frac{C}{x + 2}\right) \, dx$$
+		converge. Calcule a integral para esse valor de C.
+		
+		\item Encontre o valor da constante C para qual a integral
+		$$\integral_0^{\infty} \left(\frac{x}{x^2 + 1} - \frac{C}{3x + 1}\right) \, dx$$
+		converge. Calcule a integral para esse valor de C.
+		
+		
+		
+								
+	\end{enumerate}
+	
+
+\end{document}

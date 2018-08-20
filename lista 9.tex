@@ -1,0 +1,240 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+\usepackage{tasks}
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II, III e EDO}
+
+\cfoot{}
+
+\begin{document}
+
+	\begin{center}
+		\Large Lista 6 - Diferenciabilidade e Plano Tangente
+	\end{center}
+	
+	\begin{enumerate}
+	
+	\item Prove que as funções dadas são diferenciáveis.
+	
+	\begin{enumerate}
+		\item $f(x,y) = xy$
+		\item $x^2y^2$
+		\item $\displaystyle\frac{1}{x + y}$
+		\item $f(x,y) = x + y$
+		\item $f(x,y) = \displaystyle\frac{1}{xy}$
+	\end{enumerate}
+	
+	\item Verifique que a função dada é diferenciável.	
+	
+	\begin{enumerate}
+		\item $f(x,y) = e^{x - y^2}$
+		\item $f(x,y) = x^2y$
+		\item $f(x,y) = x \cos (x^2 + y^2)$
+		\item $f(x,y) = x^4 + y^3$
+		\item $f(x,y) = \ln (1 + x^2 + y^2)$
+		\item $f(x,y) = \arctan (xy)$
+	\end{enumerate}		
+	
+	\item Determine as equações do plano tangente e da reta normal ao gráfico da função dada, no ponto dado.
+	
+	\begin{enumerate}
+		\item $f(x,y) = 2x^2y$ em $(1,1,f(1,1))$.
+		\item $f(x,y) = x^2 + y^2$ em $(0,0,f(0,1))$.
+		\item $f(x,y) = 3x^3y - xy$ em $(1,-1,f(1,-1))$.
+		\item $f(x,y) = xe^{x^2 - y^2}$ em $(2,2,f(2,2))$.
+		\item $f(x,y) = \arctan (x - 2y)$ em $(2,1/2,f(2,1/2))$.
+	\end{enumerate}
+	
+	\item Determine o plano que passa pelos pontos $(1,1,2)$ e $(-1,1,1)$ e que seja tangente ao gráfico de $f(x,y) = xy$.
+	
+	\item $2x + y + 3z = 6$ é a equação do plano tangente ao gráfico de $f(x,y)$ no ponto $(1,1,1)$.
+	
+	\begin{enumerate}
+		\item Calcule $\dfrac{\partial f}{\partial x}(1,1)$ e $\dfrac{\partial f}{\partial y}(1,1)$.
+		\item Determine a equação da reta normal no ponto $(1,1,1)$.
+	\end{enumerate}
+	
+	\item $z = 2x + y$ é a equação do plano tangente ao gráfico de $f(x,y)$ no ponto $(1,1,3)$. 
+	
+	Calcule $\dfrac{\partial f}{\partial x}(1,1)$ e $\dfrac{\partial f}{\partial y}(1,1)$.
+	
+	\item Considere a função $f(x,y) = \displaystyle\frac{x^3}{x^2 + y^2}$. Mostre que os planos tangentes ao gráfico de $f$ passam pela origem.
+	
+	\item A função $z = z(x,y)$ é diferenciável e dada implicitamente pela equação $\displaystyle\frac{x^2}{a^2} + \displaystyle\frac{y^2}{b^2} + \displaystyle\frac{z^2}{c^2} = 1$. Mostre que $\displaystyle\frac{x_0x}{a^2} + \displaystyle\frac{y_0y}{b^2} + \displaystyle\frac{z_0z}{c^2} = 1$ é a equação do plano tangente no ponto $(x_0, y_0, z_0), z_0 \neq 0$.  
+	
+	\item Seja $z = f(x,y)$ diferenciável em $(x_0,y_0)$. Seja S a função afim dada por $S(x,y) = a(x - x_0) + b(y - y_0) + c.$ Suponha que
+	$$f(x,y) = S(x,y) + E(x,y)$$
+com
+	$$\limite_{(x,y) \to (0,0)} \displaystyle\frac{E(x,y)}{||(x,y) - (x_0, y_0)||} = 0$$.
+	
+	Conclua que $a = \dfrac{\partial f}{\partial x}(x_0,y_0)$, $b = \dfrac{\partial f}{\partial y}(x_0,y_0)$ e $c = f(x_0, y_0)$.
+	
+	\item A energia consumida num resistor elétrico é dada por $P = \displaystyle\frac{V^2}{R}$ watts. Se $V = 100$ volts e $R = 10$ ohms, calcule um valor aproximado para a variação $\Delta P$ em $P$, quando $V$ decresce $0,2$ volt e $R$ aumenta de $0,01$ ohm.
+	
+	\item Calcule aproximadamente $(1,01)^{2,03}$.
+	
+	\item Calcule aproximadamente $\sqrt{(0,01)^2 + (3,02)^2 + (3,97)^2}$.	
+	
+	\item Um dos catetos de um triângulo retângulo é $x = 3$ cm e outro, $y = 4$ cm. Calcule um valor aproximado para a variação $\Delta z$ na hipotenusa $z$, quando $x$ aumenta $0,01$ cm e $y$ decresce $0,1$ cm. 
+	
+	\item Defina matematicamente um diferencial de uma função de duas variáveis.
+	
+	\item Defina matematicamente um diferencial de uma função de três variáveis.
+	
+	\item Seja $z = xe^{x^2 - y^2}$.
+	
+	\begin{enumerate}
+		\item Calcule um valor aproximado para a variação $\Delta z$ em $z$, quando se passa de $x = 1$ e $y = 1$ para $x = 1,01$ e $y = 1,002$.
+		
+		\item Calcule um valor aproximado para $z$, correspondente a $x = 1$ e $y = 8$ para $x = 0,9$ e $y = 8,01$.
+		
+	\end{enumerate}
+	
+	\item Determine uma equação do plano tangente à superfície no ponto especificado.
+	\begin{enumerate}
+		\item $z = 3y^2 - 2x^2 + x$, \quad $(2, -1, -3)$
+		\item $z = 3(x - 1)^2 + 2(y + 3)^2 + 7$,\quad $(2, -2, 12)$
+		\item $z = \sqrt{xy} $, \quad $(1, 1, 1)$
+		\item $z = xe^{xy} $, \quad $(2, 0, 2)$
+		\item $z = x\sin (x + y) $, \quad $(-1, 1, 0)$
+		\item $z = \ln (x - 2y)$, \quad $(3, 1, 0)$
+		\item $z = 4x^3y^2 + 2y$, \quad $(1, -2, 12)$
+		\item $z = 1/2 x^7y^{-2}$, \quad $(2, 4, 4)$
+		\item $z = xe^{-y}$, \quad $(1, 0, 1)$
+		
+		\item $z = \ln \sqrt{x^2 + y^2}$, \quad $(-1, 0, 0)$
+		\item $z = x^2y - 4z^2 = -7$, \quad $(-3, 1, -2)$
+		\item $z = x^{1/2} + y^{1/2}$, \quad $(4, 9, 5)$
+		\item $z = e^{3y}\sin 3x$, \quad $(\pi /6, 0, 1)$
+		\item $z = x^2y$, \quad $(2, 1, 4)$
+		\item $x^2 + y^2 + z^2 = 25$, \quad $(-3, 0, 4)$
+	\end{enumerate}
+	
+	\item A tensão $T$ no cordel de um ioiô é dado por
+	$$T = \displaystyle\frac{mgR}{2r^2 + R^2}$$
+	onde $m$ é a massa do ioiô e $g$ é a aceleração pela gravidade. Utilize as diferenciais para estimar a variação na tensão se R aumentar de $3$ cm para $3,1$ cm e $r$ aumentar de $0,7$ cm para $0,8$ cm. A tensão aumenta ou decresce? 
+	
+	\item Se $R$ é a resistência equivalente de três resistores conectados em paralelo, com resistências $R1$, $R2$ e $R3$, então
+	$$\displaystyle\frac{1}{R} = \displaystyle\frac{1}{R_1} + \displaystyle\frac{1}{R_2} + \displaystyle\frac{1}{R_3}$$
+	Se as resistências são medidas em ohms como $R_1 = 25 \Omega$, $R_2 = 40 \Omega$ e $R_3 = 50 \Omega$ com margem de erro de $0,5$ \% em cada uma, estime o erro máximo no valor calculado de $R$. 
+	
+	\item Calcule $\nabla f(x,y)$ sendo $f(x,y) = $
+	 \begin{enumerate}
+	 	\item $x^2y$
+	 	\item $e^{x^2 - y^2}$
+	 	\item $x/y$
+	 	\item $\arctan (x/y)$
+	 	
+	 \end{enumerate}
+	 
+	\item Defina gradiente de uma função de três variáveis. Calcule $\nabla f(x,y,z)$ sendo $f(x,y,z) = $
+	 	 \begin{enumerate}
+	 	 	\item $\sqrt{x^2 + y^2 + z^2}$
+	 	 	\item $x^2 + y^2 + z^2$
+	 	 	\item $(x^2 + y^2 + 1)^{z^2}$
+	 	 	\item $z \arctan (x/y)$
+	 	 \end{enumerate}
+	 
+	 \item Seja $f(x,y) = x^2 - y^2$. Represente geometricamente $\nabla f(x_0,y_0)$ sendo $(x_0, y_0) = $
+	 \begin{enumerate}
+	 	\item $(1,1)$
+	 	\item $(-1,-1)$
+	 	\item $(-1,1)$
+	 	\item $(1,-1)$
+	 \end{enumerate}
+	 
+	 \item Por que dizemos que quando o vetor gradiente e a derivada direcional possuem a mesma direção a taxa de variação é máxima? Justifique. 
+	 
+	 \item Encontre o gradiente da função no ponto determinado. Em seguida, esboce o gradiente juntamente com a curva de nível que passa pelo ponto.
+	 \begin{enumerate}
+	 	\item $f(x,y) = y - x$, \quad $(2,1)$
+	 	\item $f(x,y) = \ln (x^2 + y^2)$, \quad $(1,1)$
+	 	\item $f(x,y) = xy^2$, \quad $(2,-1)$
+	 	\item $f(x,y) = x^2/2 - y^2/2$, \quad $(\sqrt{2},1)$
+	 	\item $\sqrt{2x + 3y}$, \quad $(-1,2)$
+	 	\item $\arctan (\sqrt{x}/y)$, \quad $(4,-2)$
+	 \end{enumerate}
+	 
+	 \item Encontre $\nabla f$ no ponto dado.
+	 \begin{enumerate}
+	 	\item $f(x,y,z) = x^2 + y^2 - 2z^2 + z\ln x$, \quad $(1,1,1)$
+	 	\item $f(x,y,z) = 2z^3 - 3(x^2 + y^2)z + \arctan (xz)$, \quad $(1,1,1)$
+	 	\item $f(x,y,z) = (x^2 + y^2 + z^2)^{-1/2} + \ln (xyz)$, \quad $(-1,2,-2)$
+	 	\item $f(x,y,z) = e^{x + y}\cos z + (y + 1) \sin^{-1} x$, \quad $(0,0,\pi /6)$
+	 	
+	 \end{enumerate}
+	 
+	 \item Encontre a derivada direcional $D_u f(x,y)$ se 
+	 $$f(x,y) = x^3 - 3xy + 4y^2$$
+	 e \textbf{u} é o vetor unitário dado pelo ângulo $\theta = \pi / 6$. Qual será $D_u f(1,2)$.
+	 \item A temperatura em um ponto $(x,y,z)$ é dada por 
+	 $$T(x,y,z) = 200e^{-x^2 - 3y^2 - 9z^2}$$
+	 onde $T$ é medido em $ºC$ e $x,y,z$ em metros.
+	 \begin{enumerate}
+	 	\item Determine a taxa de variação da temperatura no ponto $P(2,-1,2)$ em direção ao ponto $(3,-3,3)$.
+	 	\item Qual é a direção de maior crescimento da temperatura em $P$?
+	 	\item Encontre a taxa máxima de crescimento em $P$.
+	 
+	 \end{enumerate}
+	 
+	\item Determine a equação do plano tangente ao hiperbolóide $\displaystyle\frac{x^2}{a^2} + \displaystyle\frac{y^2}{b^2} - \displaystyle\frac{z^2}{c^2} = 1$ em $(x_0, y_0, z_0)$.
+	 	
+	 \item Mostre que a equação do plano tangente ao parabolóide elíptico $\displaystyle\frac{z}{c} = \displaystyle\frac{x^2}{a^2} + \displaystyle\frac{y^2}{b^2}$ no ponto $(x_0, y_0, z_0)$ pode ser escrita como
+	 	$$\displaystyle\frac{2xx_0}{a^2} + \displaystyle\frac{2yy_0}{b^2} = \displaystyle\frac{z + z_0}{c}$$ 	 
+	 
+	 \item Se o potencial elétrico em um ponto $(x,y)$ do plano $xy$ é $V(x,y)$ então o vetor intensidade elétrica no ponto $(x,y)$ é $E = -\nabla V (x,y)$. Suponha que $V(x,y) = e^{-2x}\cos 2y$.
+	 \begin{enumerate}
+	 	\item Determine o vetor intensidade elétrica em $(\pi/4, 0)$.
+	 	\item Mostre que, em cada ponto do plano, o potencial elétrico descresce mais rapidamente na direção e sentido do vetor $E$.
+	 \end{enumerate}
+	 
+	 \item Dado que as equações $u = u(x,y,z)$, $v = v(x,y,z)$, $w = w(x,y,z)$ e $f(u,v,w)$ são diferenciáveis, mostre que
+	 $$\nabla f(u,v,w) = \dfrac{\partial f}{\partial u} \nabla u + \dfrac{\partial f}{\partial v} \nabla v + \dfrac{\partial f}{\partial w} \nabla w$$
+	 
+	\end{enumerate}
+	
+
+\end{document}

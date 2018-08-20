@@ -1,0 +1,329 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+\usepackage{tasks}
+\usepackage{enumitem} 
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II, III e EDO}
+
+\cfoot{}
+
+\begin{document}
+
+\begin{center}
+		\Large Lista 3 - Funções de Várias variáveis e Curvas de Nível.
+	\end{center}
+
+\begin{enumerate}
+
+\item Seja $A$ um conjunto definido por: $A = \{(x,y) \in \mathbb{R}^2 \,|\, y = 2x + 1\}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $B$ um conjunto definido por: $B = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq 2x + 1\}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $C$ um conjunto definido por: $C = \{(x,y) \in \mathbb{R}^2 \,|\, x^2 + y^2 \leq 4 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $D$ um conjunto definido por: $D = \{(x,y) \in \mathbb{R}^2 \,|\, x \geq 3 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $E$ um conjunto definido por: $E = \{(x,y) \in \mathbb{R}^2 \,|\, y = x - 2 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $F$ um conjunto definido por: $F = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x - 2 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $G$ um conjunto definido por: $G = \{(x,y) \in \mathbb{R}^2 \,|\, y < x - 2 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $H$ um conjunto definido por: $H = \{(x,y) \in \mathbb{R}^2 \,|\, x \geq 3 \}$. Faça uma representação geométrica deste conjunto.
+
+
+
+
+
+
+
+
+\item Seja $I$ um conjunto definido por: $I = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $J$ um conjunto definido por: $J = \{(x,y) \in \mathbb{R}^2 \,|\, x^2 + y^2 \leq 25 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $K$ um conjunto definido por: $K = \{(x,y) \in \mathbb{R}^2 \,|\, x^2 + y^2 > 25 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $L$ um conjunto definido por: $L = \{(x,y) \in \mathbb{R}^2 \,|\, (x - 2)^2 + y^2 < 1 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $M$ um conjunto definido por: $M = \{(x,y) \in \mathbb{R}^2 \,|\, (x - 4)^2 + (y - 4)^2 \leq 1 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Obtenha os pontos que satisfazem simultaneamente as relações: 
+	\begin{enumerate}[label=(\roman*)]
+	\item $y \geq x + 2$
+	\item $y \geq 2$
+	\end{enumerate}
+	
+\item Obtenha os pontos que satisfazem simultaneamente as relações: 
+	\begin{enumerate}[label=(\roman*)]
+	\item $x + y \geq 2$
+	\item $-x + y \geq 2$
+	\end{enumerate}
+	
+\item Obtenha os pontos que satisfazem simultaneamente as relações: 
+	\begin{enumerate}[label=(\roman*)]
+	\item $x + y \leq 10$
+	\item $x \leq 4$
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\item Obtenha os pontos que satisfazem simultaneamente as relações: 
+	\begin{enumerate}[label=(\roman*)]
+	\item $|x| \leq 3$
+	\item $|y| \leq 2$
+	\end{enumerate}
+	
+\item Obtenha os pontos que satisfazem simultaneamente as relações: 
+	\begin{enumerate}[label=(\roman*)]
+	\item $x^2 + y^2 \leq 9$
+	\item $x + y \geq 3$
+	\end{enumerate}
+
+\item Seja $A$ um conjunto definido por: $A = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x^2 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $B$ um conjunto definido por: $B = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x^2 + 1 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $C$ um conjunto definido por: $C = \{(x,y) \in \mathbb{R}^2 \,|\, y \leq 1 - x^2 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $D$ um conjunto definido por: $D = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq \frac{1}{x}\ \textrm{e } x > 0 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Seja $E$ um conjunto definido por: $E = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq \frac{2}{x}\ \textrm{e } x > 0 \}$. Faça uma representação geométrica deste conjunto.
+
+\item Esboce o gráfico da relação: $A = \{(x,y,z) \in \mathbb{R}^3 \,|\, x = 3 \}$.
+
+
+
+
+
+
+
+
+
+
+\item Esboce o gráfico da relação: $B = \{(x,y,z) \in \mathbb{R}^3 \,|\, y = 2 \}$.
+\item Esboce o gráfico da relação: $C = \{(x,y,z) \in \mathbb{R}^3 \,|\, x = 2 \}$.
+\item Esboce o gráfico da relação: $D = \{(x,y,z) \in \mathbb{R}^3 \,|\, x = 0 \}$.
+\item Esboce o gráfico da relação: $E = \{(x,y,z) \in \mathbb{R}^3 \,|\, y = 0 \}$.
+
+\item Esboce o gráfico do plano: $x + y + z = 2$.
+\item Esboce o gráfico do plano: $2x + 3y + 4z -12 = 0$.
+\item Esboce o gráfico do plano: $3x + 4y - z - 12 = 0$.
+\item Esboce o gráfico do plano: $x - y + z - 1 = 0$.
+
+
+
+
+
+\item Esboce o gráfico do plano: $x - y = 0$.
+\item Esboce o gráfico do plano: $x + y = 2$.
+\item Calcule a distância entre os pontos A e B: $A(1,2,1)\ \textrm{e } B(4,2,3)$.
+\item Calcule a distância entre os pontos A e B: $A(2,1,3)\ \textrm{e } B(0,0,0)$.
+\item Calcule a distância entre os pontos A e B: $A(-1,2,-1)\ \textrm{e } B(0,1,-3)$.
+\item Calcule a distância entre os pontos A e B: $A(1,4,2)\ \textrm{e } B(1,4,2)$.
+\item Calcule a distância entre os pontos A e B: $A(1,0,2,3)\ \textrm{e } B(2,3,1,1)$.
+\item Calcule a distância entre os pontos A e B: $A(-1,2,0,0,3)\ \textrm{e } B(0,0,-2,-1,5)$.
+
+
+
+
+
+
+
+
+
+
+\item Calcule a distância entre os pontos A e B: $A(1,2,3,4)\ \textrm{e } B(1,2,3,4)$.
+
+\item Dado o conjunto $A = \{(x,y) \in \mathbb{R}^2 \,|\, x \leq 2\}$, assinale os pontos interiores:
+	\begin{enumerate}
+		\item $P(1,4)$
+		\item $P(9/2,5)$
+		\item $P(2,6)$
+		\item $P(3,9)$
+		\item $P(2,2)$
+		\item $P(1,-9)$
+	\end{enumerate}	
+	
+\item Dado o conjunto $A = \{(x,y) \in \mathbb{R}^2 \,|\, x + y \leq 2, x \geq 0\ \textrm{e } y \geq 0 \}$, assinale os pontos interiores:
+	\begin{enumerate}
+		\item $P(1,0)$
+		\item $P(0,1)$
+		\item $P(1,1)$
+		\item $P(1/2,1/2)$
+		\item $P(1/2,1/4)$
+		\item $P(3,0)$
+	\end{enumerate}		
+
+\item O conjunto $A = \{(x,y) \in \mathbb{R}^2 \,|\, y > 3 \}$ é aberto? Justifique.
+
+\item O conjunto $B = \{(x,y) \in \mathbb{R}^2 \,|\, |x| < 3 \}$ é aberto? Justifique.
+
+\item O conjunto $C = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x \}$ é aberto? Justifique.
+
+\item O conjunto $D = \{(x,y) \in \mathbb{R}^2 \,|\, y = x + 1 \}$ é aberto? Justifique.
+
+\item O conjunto $D = \{(x,y,z) \in \mathbb{R}^3 \,|\, 0 < x < 1, 0 < y < 1, 0 < z < 1 \}$ é aberto? Justifique.
+
+
+
+
+
+
+
+
+
+
+
+\item O conjunto $E = \{(x,y,z) \in \mathbb{R}^3 \,|\, 0 \leq x \leq 1, 0 \leq y \leq 1, 0 \leq z \leq 1 \}$ é aberto? Justifique.
+
+\item Identifique os pontos de fronteira do conjunto: $A = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq 5 \}$.
+
+\item Identifique os pontos de fronteira do conjunto: $B = \{(x,y) \in \mathbb{R}^2 \,|\, -1 \leq x \leq 2 \}$.
+
+\item Identifique os pontos de fronteira do conjunto: $C = \{(x,y) \in \mathbb{R}^2 \,|\, 0 < y \leq 2 \}$.
+
+\item Identifique os pontos de fronteira do conjunto: $D = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x^2 \}$.
+
+\item Identifique os pontos de fronteira do conjunto: $E = \{(x,y) \in \mathbb{R}^2 \,|\, y \leq x^2 - 1 \}$.
+
+\item Identifique os pontos de fronteira do conjunto: $F = \{(x,y) \in \mathbb{R}^2 \,|\, x^2 + y^2 \leq 9 \}$.
+
+\item Identifique os pontos de fronteira do conjunto: $G = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq x \}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item Identifique os pontos de fronteira do conjunto: $H = \{(x,y) \in \mathbb{R}^2 \,|\, y \geq 1/x \}$.
+
+\item Defina o domínio da função $z = f(x,y) = \displaystyle\frac{x + y}{x - y}$ matematicamente e geometricamente.
+
+\item Defina o domínio da função $z = f(x,y) = \sqrt[4]{1 - x^2 - y^2}$ matematicamente e geometricamente.
+
+\item Defina o domínio da função $z = f(x,y) = \displaystyle\frac{2x + 3y}{\sqrt{1-x-y}}$ matematicamente e geometricamente.
+
+\item Defina o domínio da função $z = f(x,y) = \displaystyle\frac{2x + 3y}{\sqrt{1-x-y}}$ matematicamente e geometricamente.
+
+\item Defina o domínio da função $z = f(x,y) = \displaystyle\frac{\sqrt{x-y}}{\sqrt{1-x^2-y^2}}$ matematicamente e geometricamente.
+
+\item Defina o domínio da função $z = f(x,y) = \sqrt{36 - x^2 - y^2 - z^2}$ matematicamente e geometricamente.
+
+\item Como é definida a função $f(x,y) = 2x^2y^3 + 3x^2y + 1$ enquanto a sua natureza?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item Como é definida a função $g(x,y) = 3xy + 4y - 1$ enquanto a sua natureza?
+
+\item Como é definida a função $f(x,y) = ax + by$, enquanto a sua natureza, onde $(a,b) \in \mathbb{R} $?
+
+\item A função $f(x,y) = \displaystyle\frac{x^2}{x^2 + y^2}$ é limitada? Justifique.
+
+\item A função $f(x,y) = x^2 + y^2$ é homogênea? Justifique.
+
+\item A função $f(x,y) = \displaystyle\frac{xye^{x/y}}{x^2 + y^2}$ é homogênea? Justifique.
+
+\item Encontre o conjunto de nível da função $f(x,y) = x - y$.
+
+\item Encontre o conjunto de nível da função $f(x,y) = x^2 + y^2$.
+
+\item Encontre o conjunto de nível da função $f(x,y) = y^2 - x^2$.
+
+
+
+
+
+
+
+
+
+
+
+
+\item Encontre o conjunto de nível da função $f(x,y,z) = x^2 + y^2 + z^2$.
+
+\item Defina o domínio da função $f(x,y) = \displaystyle\frac{2xy^2}{x^2 + y^4}$. Em seguida encontre as Curvas de Nível da função.
+
+\item Esboce as curvas de nível da função $f(x,y) = 3x + 4y$ nos níveis $c = 12$ e $c = 24$.
+
+\item Esboce as curvas de nível da função $f(x,y) = x - y$ nos níveis $c = 0$, $c = 1$ e $c = -1$.
+
+\item Esboce as curvas de nível da função $f(x,y) = \displaystyle\frac{1}{x^2 + y^2}$ nos níveis $c = 1$, e $c = 4$.
+
+\item Esboce as curvas de nível da função $f(x,y) = y - x^2 + 4$ nos níveis $c = 0$, e $c = 5$.
+
+\item Esboce as curvas de nível da função $f(x,y) = y - x^3$ nos níveis $c = 0$, e $c = 1$.
+
+\item Esboce as curvas de nível da função $g(x,y) = \sqrt{9 - x^2 - y^2}$ nos níveis $c = 0, c = 1, c = 2$, e $c = 3$.
+
+\end{enumerate}
+
+\end{document}

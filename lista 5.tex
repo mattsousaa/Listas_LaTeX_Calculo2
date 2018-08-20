@@ -1,0 +1,266 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{epsfig}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyheadings}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+
+% As margens
+\setlength{\textheight}{24.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm} % Margens reais desejadas
+\setlength{\evensidemargin}{2.0cm} % 2+17.5+1.5=21cm (largura A4)
+\setlength{\topmargin}{1.5cm} % 1.5+1.6+1.0+24.0+1.6=29.7cm
+\setlength{\headheight}{1.6cm} % (altura A4)
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm} % Coluna = 8cm ((17.5-1.5)/2)
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1in}
+\setlength{\footskip}{0.0cm}
+\usepackage{tasks}
+
+% Novos comandos
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
+
+\pagestyle{fancy}
+
+
+\usepackage{lipsum}
+
+\lhead{
+\includegraphics[width=1cm]{brasao.png}
+}
+
+\rhead{ 
+\sc\textbf{U}niversidade \textbf{F}ederal do \textbf{C}eará\\
+Campus Quixadá\\ Monitoria de Cálculo II e III}
+
+\cfoot{}
+
+\begin{document}
+
+	\begin{center}
+		\Large Lista 5 - Cálculo II
+	\end{center}
+	
+
+	Defina  ${\bf a}$ $\cdot$ ${\bf b}$:
+	
+	\begin{enumerate}
+	
+	\item $\textbf{a} = \langle 2,3\rangle$, \quad	$\textbf{b} = \langle 0,7,1,2\rangle$ 
+	\item $\textbf{a} = \langle -2,\frac{1}{3}\rangle$, \quad 	$\textbf{b} = \langle -5, 12\rangle$ 
+	\item $\textbf{a} = \langle 6,-2, 3\rangle$, \quad	$\textbf{b} = \langle 2,5,-1\rangle$  	
+	\item $\textbf{a} = \langle 4,1, \frac{1}{4}\rangle$, \quad	$\textbf{b} = \langle 6, -3, -8\rangle$ 
+	\item $\textbf{a} = \langle s,2s,3s\rangle$, \quad	$\textbf{b} = \langle t, -t, 5t\rangle$ 
+	\item $\textbf{a} = \textbf{i} - 2\textbf{j} + 3\textbf{k}$, \quad $\textbf{b} = 5\textbf{i} + 						  9\textbf{k}$ 
+	\item $\textbf{a} = 3\textbf{i} + 2\textbf{j} - \textbf{k}$, \quad $\textbf{b} = 4\textbf{i} + 					      5\textbf{k}$ 
+	\item $\textbf{a} = \textbf{i} - 2\textbf{j} + 3\textbf{k}$, \quad $\textbf{b} = 5\textbf{i} + 						  9\textbf{k}$
+	
+	 
+	\item ${\bf|a|} = 6$, \quad ${\bf|b|} = 5$, e o ângulo entre \textbf{a} e \textbf{b} é $\displaystyle			\frac{2\pi}{3}$.
+	\item ${\bf|a|} = 3$, \quad ${\bf|b|} = \sqrt{6}$, e o ângulo entre \textbf{a} e \textbf{b} é $45º$.	
+	\item Encontre o trabalho feito por uma força $\textbf{F} = 8\textbf{i} - 6\textbf{j} = 9\textbf{k}$ 			que move um objeto do ponto $(0, 10, 8)$ para o ponto $(6, 12, 20)$ ao longo de uma reta. A distância é 	medida em metros e a força em Newtons. 
+	\item Um caminhão-guincho puxa um carro quebrado por uma estrada. A corrente faz um ângulo de $30º$ com 	a estrada e a tensão na corrente é $1.500$ N. Quanto trabalho é feito pelo caminhão ao puxar o carro 			por $1$ km?
+	\item Se $\theta$ é o ângulo entre os vetores $\textbf{a}$ e $\textbf{b}$, então definimos produto 	    		escalar de $\textbf{a}$ e $\textbf{b}$ como:
+	$$ \bf{a} \cdot b = |a||b|\cos {\theta} $$
+	Com essas informações demonstre a Desigualdade de Cauchy-Schwarz:
+	$$\bf|a \cdot b| \leq |a||b|$$
+	\item A desigualdade de Cauchy-Schwarz é definida como:
+	$$\bf|a \cdot b| \leq |a||b|$$
+	Temos também a Desigualdade Triangular para vetores, que é definida como:
+	$${\bf|a + b|} \leq {\bf|a| + |b|}$$
+	Utilize a desigualde de Cauchy-Schwarz para provar a Desigualdade Triangular.	
+	\textbf{Dica}: Utilize a definição de produto escalar para dois vetores e considere que: $$\bf|a + b|^2 	= (a 	+ b)(a + b)$$.
+	\item Um carrinho é puxado uma distância de $100$ m ao longo de um caminho horizontal por uma força 			constante de $70$ N. A alça do carrinho é mantida a um ângulo de $35º$ acima da horizontal. Encontre o 			trabalho feito pela força.
+		
+	Seja ${\bf u} = \langle 1, 2, -2 \rangle$ e ${\bf v} = \langle 1, 2, -2 \rangle$. 	Determine:	
+	
+	\item $\bf u \times v$
+	
+	
+	
+	\item $\bf v \times u$
+	\item Mostre que $\bf u \times u = 0$ para qualquer vetor no espaço tridimensional.
+	\item Sejam $u$ e $v$ vetores não nulos do espaço tridimensional, e seja $\theta$ o ângulo entre esses vetores quando estiverem posicionados de tal forma que os seus pontos iniciais coincidam. Mostre que:
+	$$\bf ||u \times v|| = ||u||\,||v||\sin \theta $$
+	\item Encontre equações paramétricas da reta $L$ que passa pelos pontos $P_1 (2,4,-1)$ e $P_2 (5,0,7)$.
+	\item Sejam $L_1$ e $L_2$ as retas:
+	
+	$L_1 : x = 1 + 4t$, \quad $y = 5 - 4t$, \quad $z = -1 + 5t$
+	
+	$L_2 : x = 2 + 8t$, \quad $y = 4 - 3t$, \quad $z = 5 + t$
+	 
+	 Essas retas são paralelas? Elas se intersectam? 
+	
+	\item Determine as equações paramétricas para o segmento de reta que une os pontos $P_1(2,4,-1)$ e $P_2(5,0,7)$.
+	
+	Expresse as equações paramétricas dadas da reta na forma vetorial:
+	
+	\item $x = -3 + t$, \quad $y = 4 + 5t$
+	\item $x = 2 - t$, \quad $y = -3 + 5t$, \quad $z = t$
+	
+	
+	
+	
+	
+	\item $x = t$, \quad $y = -2 + t$
+	\item $x = 1 + t$, \quad $y = -7 + 3t$, \quad $z = 4 - 5t$
+	
+	\item Determine uma equação do plano que passa pelos pontos $(3,-1,7)$ e é perpendicular ao vetor $n = \langle 4, 2, -5 \rangle$.
+	
+	\item Determine se os planos
+	$3x - 4y + 5z = 0$ e $-6x + 8y - 10z - 4 = 0$
+	são paralelos.
+	
+	\item Determine uma equação do plano que passa pelos pontos $P_1(1,2,-1)$, $P_2(2,3,1)$ e $P_3(3,-1,2)$.
+	
+	\item Ache uma equação do plano que contenha o ponto $(2,1,3)$ e que tenha  $3\textbf{i} - 4\textbf{j} + \textbf{k}$ como um vetor normal.
+	
+	\item Ache uma equação do plano que passa pelos pontos $P(1,3,2)$,    $Q(3,-2,2)$ e $R(2,1,3)$.   
+	
+	\item Trace um esboço do plano com a equação $2x + 4y + 3z = 8$.
+	
+	
+	
+	
+	
+	\item Trace um esboço do plano com a equação $3x + 2y - 6z = 0$.
+	
+	\item Ache a medida em radianos do ângulo entre os planos 
+	$5x - 2y + 5z - 12 = 0$ e $2x + y - 7z + 11 = 0$.
+	
+	\item Ache uma equação do plano contendo o ponto $(4,0,-2)$ e perpendicular a cada um dos planos
+	$x - y + z = 0$ e $2x + y - 4z - 5 = 0$.
+	
+	Ache uma equação do plano contendo o ponto $P$ dado e tendo o vetor $N$ dado como um vetor normal.
+	
+	\item $P(3,1,2)$; $N = \langle 1, 2, -3 \rangle$.
+	 
+	\item $P(-3,2,5)$; $N = \langle 6, -3, -2 \rangle$.
+	 
+	\item $P(0,-1,2)$; $N = \langle 0, 1, -1 \rangle$.
+	 
+	\item $P(-1,8,3)$; $N = \langle -7, -1, 1 \rangle$.
+	 
+	\item $P(2,1,-1)$; $N = -\textbf{i} + 3\textbf{j} + 4\textbf{k}$.
+	 
+	 
+	 
+	 
+	 
+	 
+	\item $P(1,0,0)$; $N = \textbf{i} + \textbf{k}$.
+	
+	\item Ache uma equação do plano que contenha os $3$ pontos dados:
+	$(3,4,1)$, $(1,7,1)$, $(-1,-2,5)$.
+	 
+	\item Ache uma equação do plano que contenha os $3$ pontos dados:
+	$(0,0,2)$, $(2,4,1)$, $(-2,3,3)$.
+	
+	Faça um esboço do plano dado e ache dois vetores unitários normais ao plano.
+	
+	\item $2x - y + 2z - 6 = 0$.
+	\item $4x + 3y - 12z = 0$.
+	\item $3x + 2z - 6 = 0$.
+	\item $4x - 4y + 2z - 9 = 0$.
+	\item $y + 2z - 4 = 0$.
+	 
+	 
+	 
+	 
+	 
+	 \item $z = 5$.
+	 
+	 Determine o nome da superfície dada. Realize os cálculos para fazer a demonstração ou justifique de 			 forma adequada.
+	 
+	 \item $4x^2 + 9y^2 + z^2 = 36$.
+	 \item $x^2 + y^2 + z^2 - 4x + 6y - 2z - 2 = 0$.
+	 \item $z = -4(x^2 + y^2)$.
+	 \item $\displaystyle\frac{x^2}{121} + \displaystyle\frac{y^2}{36} = \displaystyle\frac{25 + z^2}{25}$.
+	 \item $9x^2 - 18x + 9y^2 + 4z^2 + 16z - 11 = 0$.
+	 \item $z = y^2 - x^2$.
+	 \item $9x^2 - 4y^2 + 36z^2 = 36$.
+	 
+	 
+	 
+	 
+	 \item $5x^2 - 2z^2 - 3y = 0$.
+	 \item $4y^2 - 25x^2 = 100$.
+	 \item $4x^2 - 16y^2 + 9z^2 = 0$.
+	 \item $25x^2 = 4y^2 + z^2 + 100$.
+	 \item $3y^2 + 7z^2 = 6x$.
+	 \item $3x^2 - 4y^2 + 12z^2 + 12 = 0$.
+	 \item $4x^2 - 4y^2 +z^2 = 0$.
+	 \item Esboce o elipsóide:
+	 
+	 $$\displaystyle\frac{x^2}{4} + \displaystyle\frac{y^2}{16} + \displaystyle\frac{z^2}{9} = 1$$
+	 
+	 Para a superfície $4x^2 + y^2 + z^2 = 9$, classifique o traço indicado como elipse, hipérbole ou parábola.
+	 
+	 
+	 
+	 
+	 
+	 
+	 \item $x = 0$.
+	 \item $y = 0$.
+	 \item $z = 1$.
+	 
+	  Para a superfície $4x^2 + z^2 - y^2 = 9$, classifique o traço indicado como elipse, hipérbole ou parábola.
+	 
+	 \item $x = 0$.
+	 \item $y = 0$.
+	 \item $z = 1$.
+	 
+	 Para a superfície $4x^2 + y^2 - z = 0$, classifique o traço indicado como elipse, hipérbole ou parábola.
+	 
+	 \item $x = 0$.
+	 \item $y = 0$.
+	 
+	 
+	 
+	 
+	 
+	 \item $z = 1$.
+	 
+	 Classifique cada superfície como elipsóide, hiperbolóide de uma folha, hiperbolóide de duas folhas, cone elíptico, parabolóide elíptico ou parabolóide hiperbólico.
+	 
+	 \item $\displaystyle\frac{x^2}{36} + \displaystyle\frac{y^2}{25} - z = 0 $.
+	 
+	 \item $\displaystyle\frac{x^2}{36} - \displaystyle\frac{y^2}{25} + z = 0 $.
+	
+	 \item $\displaystyle\frac{x^2}{36} + \displaystyle\frac{y^2}{25} - z^2 = 0 $.
+	 
+	 \item $\displaystyle\frac{x^2}{36} + \displaystyle\frac{y^2}{25} + z^2 = 1 $.
+	 
+	 \item $\displaystyle\frac{x^2}{36} + \displaystyle\frac{y^2}{25} - z^2 = 1 $.
+	 
+	 \item $z^2 - \displaystyle\frac{x^2}{36} - \displaystyle\frac{y^2}{25} = 1 $.
+	 
+	 \item $z = \displaystyle\frac{x^2}{4} + \displaystyle\frac{y^2}{9}$.
+	 
+	  
+	 
+	 
+	
+	
+	
+	
+	
+	\end{enumerate}
+	
+
+\end{document}
